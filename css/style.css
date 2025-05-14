@@ -1,5 +1,133 @@
+:root{
+    --main-color-one: #000000;
+    --main-color-two: #087c74;
+    --para-color: gray;
+    --cards-box-shadow: ;
+    --header-background: rgba(223, 221, 221, 0.842);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+/* Header Styling */
+header{
+    width: 100%;
+    height: 85px;
+    background-color: var(--header-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.header-content{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    flex-basis: 15%;
+}
+
+.logo a, .footer-card-one a{
+    text-decoration: none;
+    color: var(--main-color-one);
+    font-weight: 700;
+    text-shadow: 4px 4px 5px var(--main-color-one);
+}
+.logo a span, .footer-card-one a span{
+    color: var(--main-color-two);
+    text-shadow: 4px 4px 5px var(--main-color-one);
+}
+
+.nav-links{
+    flex-basis: 33%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--main-color-one);
+    font-weight: 600;
+}
+
+ul li a:hover{
+    color: var(--main-color-two);
+}
+
+/* Footer Styling */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-card-one{
+    flex-basis: 30%;
+}
+
+.footer-card-one p span{
+    font-weight: 600;
+}
+
+.footer-card-two{
+    flex-basis: 18%;
+}
+
+.footer-card p{
+    padding-top: .5em;
+}
+
+.footer-card h3{
+    padding: 1em 0;
+}
+
+.footer-card p a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-card-three{
+    flex-basis: 18%;
+}
+
+.footer-card-four{
+    flex-basis: 28%;
+}
+
+#Download, #Payment{
+    padding-top: 1.5em;
+}
+
+footer > #copy-right{
+    text-align: center;
+    color: gray;
+    padding-top: 1.5em;
+}
+
+
+
