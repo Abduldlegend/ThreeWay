@@ -78,7 +78,7 @@ ul li a:hover{
     rgba(0,0,0,0.1) 0%,
     rgba(0,0,0,0.1) 100%),
     
-    url("/assets/hero-image.jpg");
+    url("../assets/hero-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
