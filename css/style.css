@@ -199,20 +199,28 @@ ul li a:hover{
 .blog-post-section {
     border: 2px solid green;
     margin-top: 4rem;
-    width: 60%;
+    width: 80%;
     margin-inline: auto;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: column; */
+    gap: 2rem;
     margin-bottom: 2rem;
 
 }
 
+.blog-post {
+    display: none;
+}
 .blog-post img {
     display: inline-block;
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    /* height: 300px; */
+}
+
+.blog-post p {
+    font-size: 12px;
 }
 
 .newsletter-section {
@@ -222,6 +230,34 @@ ul li a:hover{
     justify-content: space-between;
     color: white;
 }
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 5px;
+    margin-bottom: 2rem;
+}
+
+#pagination button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: beige;
+    transition: all 0.3s ease-in;
+}
+
+#pagination button:hover,
+#pagination button:active {
+    background-color: rgb(2, 2, 70);
+    color: white;
+}
+
+
+/* .newsletter-section p {
+    font-size: 8px;
+} */
 
 /* Footer Styling */
 
