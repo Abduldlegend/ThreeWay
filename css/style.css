@@ -168,7 +168,7 @@ ul li a:hover{
 
 .blog-hero-section h3 {
     font-size: 2rem;
-    background-color: wheat;
+    /* background-color: wheat; */
     padding: 1rem;
 }
 
@@ -200,6 +200,7 @@ ul li a:hover{
     border: 2px solid green;
     margin-top: 4rem;
     width: 80%;
+    height: 300px;
     margin-inline: auto;
     padding: 2rem;
     display: grid;
@@ -212,6 +213,15 @@ ul li a:hover{
 
 .blog-post {
     display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.blog-post.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 .blog-post img {
     display: inline-block;
@@ -223,12 +233,14 @@ ul li a:hover{
     font-size: 12px;
 }
 
-.newsletter-section {
-    background-color: rgb(12, 12, 54);
-    padding: 3rem;
+.trend-section {
+    border: 2px solid brown;
+    margin-block: 2rem;
+    width: 80%;
+    margin-inline: auto;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
-    color: white;
+    justify-content: space-around;
 }
 
 #pagination {
@@ -254,10 +266,30 @@ ul li a:hover{
     color: white;
 }
 
+.newsletter-section {
+    background-color: rgb(12, 12, 54);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
 
-/* .newsletter-section p {
-    font-size: 8px;
-} */
+.newsletter-section input {
+    /* font-size: 8px; */
+    padding-inline: 16px;
+    padding-block: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-section button {
+    padding: 10px;
+    color: white;
+    background-color: #087c74;
+    border: none;
+    border-radius: 5px;
+}
 
 /* Footer Styling */
 
