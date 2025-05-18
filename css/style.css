@@ -196,6 +196,33 @@ ul li a:hover{
     font-size: 1.5rem;
 }
 
+.blog-post-section {
+    border: 2px solid green;
+    margin-top: 4rem;
+    width: 60%;
+    margin-inline: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+.blog-post img {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+}
+
+.newsletter-section {
+    background-color: rgb(12, 12, 54);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
 /* Footer Styling */
 
 footer{
