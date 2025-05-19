@@ -269,7 +269,7 @@ ul li a:hover{
     height: 300px;
     margin-top: 4em;
     text-align: center;
-    background-image: url("/assets/cta-section.jpg");
+    background-image: url("../assets/cta-section.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
