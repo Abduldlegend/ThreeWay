@@ -35,7 +35,7 @@ header{
 }
 
 .logo{
-    flex-basis: 15%;
+    flex-basis: 45%;
 }
 
 .logo a, .footer-card-one a{
@@ -73,6 +73,14 @@ ul li a{
 
 ul li a:hover{
     color: var(--main-color-two);
+}
+
+.toggle-menu{
+    display: none;
+}
+
+#close{
+    display: none;
 }
 
 /* HERO SECTION STYLING */
@@ -283,7 +291,6 @@ ul li a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .cta-section p{
@@ -321,8 +328,10 @@ ul li a:hover{
 .seasonal-section{
     width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     justify-content: center;
+    align-items: center;
     margin-top: 3em;
 }
 
@@ -335,9 +344,8 @@ ul li a:hover{
 }
 
 .upper-cards{
-    width: 49%;
+    flex-basis: 49%;
     height: 350px;
-    background-color: #bdb3b3;
     margin-bottom: 2.5em;
     color: white;
 }
@@ -384,10 +392,9 @@ ul li a:hover{
 }
 
 .lower-cards{
-    width: 32%;
+    flex-basis: 32%;
     height: 250px;
     margin-bottom: 3em;
-    background-color: rebeccapurple;
     color: white;
 }
 
@@ -489,6 +496,7 @@ footer{
 .footer-content{
     width: 85%;
     display: flex;
+    gap: 1.5em;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 3em;
@@ -543,6 +551,305 @@ footer > #copy-right{
 
 #socials{
     text-shadow: none !important;
+}
+
+
+/* Medie Queries for Tablets and Mobile Devices */
+
+@media only screen and (max-width: 991.98px) {
+    :root{
+        font-size: 16px;
+    }
+
+
+    .toggle-menu{
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .toggle-menu a{
+        text-decoration: none;
+        color: var(--main-color-one);
+        font-size: 2.3rem;
+        margin: 0 .5em 0 40%;
+    }
+
+    .toggle-menu i{
+        color: var(--main-color-one);
+        font-size: 2.3rem;
+    }
+
+    .nav-links{
+        display: none;
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem;
+        background-color: var(--header-background);
+    }
+    .nav-links ul{
+        flex-direction: column;
+        gap: 1.6em;
+        padding: 1.8em;
+    }
+
+    #menus.active{
+        display: block;
+        transition: .3s;
+    }
+
+    #close{
+        display: block;
+        padding: 1.8em 0 0 1.5em;
+        font-size: 2.2rem;
+    }
+
+    .hero-section{
+        height: 65vh;
+    }
+
+    .hero-section h2{
+        padding-top: 40%;
+    }
+
+    .feature-card-container{
+        width: 100%;
+    }
+
+    .feature-card{
+        width: 175px;
+        height: 200px;
+    }
+
+    /* Product Section Styling(Mobile) */
+    .product-container, .new-product-container{
+        width: 100%;
+        gap: 1em;
+    }
+
+    .product-card{
+        width: 210px;
+    }
+
+    /* Seasonal Section Styling (Mobile) */
+
+    .seasonal-section{
+        font-size: 16px;
+    }
+    .upper-cards{
+        flex-basis: 100%;
+        height: 350px;
+    }
+
+    .lower-cards{
+        flex-basis: 100%;
+    }
+
+    /* NewsLetter Section Styling */
+
+    .news-letter-content{
+        width: 95%;
+        flex-direction: column;
+        gap: 1.5em;
+        justify-content: space-between;
+    }
+}
+
+/* Small Devices */
+@media only screen and (max-width: 767.98px) {
+
+    :root{
+        font-size: 13px;
+    }
+
+    .nav-links{
+        width: 70%;
+        height: 100vh;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.8rem;
+        background-color: var(--header-background);
+        transition: .3s;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        gap: 1.2em;
+        padding: 1.5em;
+    }
+
+    .toggle-menu{
+        display: block;
+        flex-basis: 40%;
+    }
+
+    .toggle-menu a{
+        text-decoration: none;
+        color: var(--main-color-one);
+        font-size: 2.3rem;
+    }
+
+    .toggle-menu i{
+        color: var(--main-color-one);
+        font-size: 2.3rem;
+    }
+
+    #menus.active{
+        display: block;
+    }
+
+    #close{
+        display: block;
+        padding: 1.8em 0 0 1.5em;
+        font-size: 2.2rem;
+    }
+
+    .hero-section{
+        height: 65vh;
+    }
+
+    .hero-section h2{
+        padding-top: 45%;
+    }
+
+    .feature-card-container{
+        width: 100%;
+    }
+
+    .feature-card{
+        width: 170px;
+        height: 200px;
+    }
+
+    /* Product Section Styling(Mobile) */
+    .product-container, .new-product-container{
+        width: 100%;
+        gap: 1em;
+    }
+
+    .product-card{
+        width: 175px;
+    }
+
+    /* Seasonal Section Styling (Mobile) */
+
+    .seasonal-section{
+        font-size: 16px;
+    }
+    .upper-cards{
+        flex-basis: 100%;
+        height: 350px;
+    }
+
+    .lower-cards{
+        flex-basis: 100%;
+    }
+
+    /* NewsLetter Section Styling */
+
+    .news-letter-content{
+        width: 95%;
+        flex-direction: column;
+        gap: 1.5em;
+        justify-content: space-between;
+    }
+
+}
+
+/* Extra Small Devices */
+@media only screen and (max-width: 399.8px) {
+
+    :root{
+        font-size: 11px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .toggle-menu{
+        display: block;
+        flex-basis: 40%;
+    }
+
+    .toggle-menu a{
+        text-decoration: none;
+        color: var(--main-color-one);
+        font-size: 2.3rem;
+        margin-right: .5em;
+    }
+
+    .toggle-menu i{
+        color: var(--main-color-one);
+        font-size: 2.3rem;
+    }
+
+    .hero-section{
+        height: 65vh;
+    }
+
+    .hero-section h2{
+        padding-top: 38%;
+    }
+
+    .feature-card-container{
+        width: 100%;
+    }
+
+    .feature-card{
+        width: 155px;
+        height: 200px;
+    }
+
+    /* Product Section Styling(Mobile) */
+    .product-container, .new-product-container{
+        width: 100%;
+        gap: 1em;
+    }
+
+    .product-card{
+        width: 155px;
+    }
+
+    /* CTA Section */
+
+    .cta-section{
+        width: 100%;
+        height: 280px;
+        font-size: 1.2rem;
+    }
+
+    /* Seasonal Section Styling (Mobile) */
+
+    .seasonal-section{
+        font-size: 16px;
+    }
+    .upper-cards{
+        flex-basis: 100%;
+        height: 350px;
+    }
+
+    .lower-cards{
+        flex-basis: 100%;
+    } 
+
+    /* NewsLetter Section Styling */
+
+    .news-letter-content{
+        width: 95%;
+        flex-direction: column;
+        gap: 1.5em;
+        justify-content: space-between;
+    }
+
+    #sign-up-input input{
+        padding: 1em 4em;
+    }
+
+
 }
 
 
