@@ -139,3 +139,20 @@
     border: none;
     border-radius: 5px;
 }
+
+@media (max-width: 399px) {
+    .blog-post-section {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter-section {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+    }
+    
+}
