@@ -13,6 +13,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* body{
+    position: relative;
+} */
+
 
 /* Header Styling */
 header{
@@ -124,14 +128,18 @@ ul li a:hover{
 
 .hero-section a{
     text-decoration: none;
-    padding: .8em;
     color: var(--main-color-two);
     padding: .8em;
     margin-left: 7.5%;
     margin-top: 1em;
-    background-image: url("../assets/11441877.png");
+    text-align: center;
+    width: 120px;
+    background-image: url("../assets/shop-now.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 700;
 }
-
 /* Feature Section styling */
 
 #feature-section{
@@ -211,8 +219,8 @@ ul li a:hover{
     margin-bottom: 2em;
     border-radius: 20px;
     border: 1px solid var(--header-background);
+    cursor: pointer;
     transition: .2s;
-    /* background-color: var(--header-background); */
 }
 
 .product-card:hover{
@@ -278,6 +286,103 @@ ul li a:hover{
     color: white;
 }
 
+/* Product Description Styling */
+
+#product-modal{
+    display: none;
+    width: 70%;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    box-shadow: 0 0 15px;
+}
+
+.modal-images{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+#main-product-img{
+    width: 100%;
+}
+
+.modal-images{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+#main-product-img{
+    width: 100%;
+}
+/* .modal-images img{
+    width: 200px;
+    height: 200px;
+} */
+
+.product-colors{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item-color{
+    margin-bottom: .8em;
+    width: 23.5%;
+    cursor: pointer;
+}
+
+.modal-description{
+    width: 60%;
+    height: 100%;
+    padding: 2em;
+}
+
+.modal-description #item-category, .modal-description h3{
+    font-weight: 700;
+    padding-bottom: 2em;
+}
+
+.modal-description h2{
+    padding-bottom: .4em;
+}
+
+.modal-description select{
+    margin-bottom: .5em;
+}
+
+.modal-description a{
+    padding: .6em 1.5em;
+    background-color: var(--main-color-two);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.modal-description h4{
+    padding: 2em 0 1.2em 0;
+}
+
+#cancel-btn{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: .7em;
+    border-radius: 50%;
+    font-size: 1rem;
+    background-color: var(--header-background);
+    transition: .3s;
+    color: var(--main-color-two);
+}
 
 
 /* Call To Action Section Styling */
@@ -378,14 +483,14 @@ ul li a:hover{
 }
 
 .upper-one{
-    background-image: url("../assets/46178.jpg");
+    background-image: url("../assets/assortment-t-shirts\ \(1\).jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .upper-two{
-    background-image: url("../assets/6671.jpg");
+    background-image: url("../assets/flat-lay-woman-style-accessories-red-knitted-sweater-checkered-shirt-denim-jeans-black-leather-boots-hat-autumn-fashion-trend-view-from-vintage-photo-camera-passport\ \(1\).jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -409,21 +514,21 @@ ul li a:hover{
 }
 
 .lower-one{
-    background-image: url("../assets/2148342404.jpg");
+    background-image: url("../assets/6671\ \(1\).jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .lower-two{
-    background-image: url("../assets/17692.jpg");
+    background-image: url("../assets/womens-clothes-accessories\ \(1\).jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .lower-three{
-    background-image: url("../assets/6671.jpg");
+    background-image: url("../assets/cta-section.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -556,6 +661,8 @@ footer > #copy-right{
 
 /* Medie Queries for Tablets and Mobile Devices */
 
+
+/* Tablet  */
 @media only screen and (max-width: 991.98px) {
     :root{
         font-size: 16px;
@@ -655,6 +762,40 @@ footer > #copy-right{
         gap: 1.5em;
         justify-content: space-between;
     }
+
+    /* modal styling */
+
+    #product-modal{
+        width: 90%;
+        margin: auto;
+        top: 10%;
+        left: 6%;
+    }
+
+    .modal-images{
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-description{
+        width: 100%;
+        padding: 1em;
+    }
+
+    .modal-description #item-category, .modal-description h3{
+        padding-bottom: 1em;
+    }
+
+    .modal-description h4{
+        padding: 1em 0 1em 0;
+    }
+
+    #cancel-btn{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+    }
+
 }
 
 /* Small Devices */
@@ -712,7 +853,7 @@ footer > #copy-right{
     }
 
     .hero-section h2{
-        padding-top: 45%;
+        padding-top: 40%;
     }
 
     .feature-card-container{
@@ -757,6 +898,50 @@ footer > #copy-right{
         justify-content: space-between;
     }
 
+    /* Product Modal */
+    #product-modal{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 2%;
+        left: 5%;
+    }
+
+    .modal-images{
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-description{
+        width: 100%;
+        padding: 1em;
+    }
+
+    .modal-description #item-category, .modal-description h3{
+        padding-bottom: 1em;
+    }
+
+    .modal-description h4{
+        padding: 1em 0 1em 0;
+    }
+
+    #cancel-btn{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+    }
+
+    /* Footer Styling */
+
+    .footer-card-one, .footer-card-fourr{
+        flex-basis: 80%;
+    }
+
+    .footer-card-three, .footer-card-two{
+        flex-basis: 40%;
+    }
 }
 
 /* Extra Small Devices */
@@ -847,6 +1032,18 @@ footer > #copy-right{
 
     #sign-up-input input{
         padding: 1em 4em;
+    }
+
+    /* Product Modal */
+
+    #product-modal{
+        flex-direction: column;
+    }
+
+    #cancel-btn{
+        position: absolute;
+        top: 2%;
+        right: 2%;
     }
 
 

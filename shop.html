@@ -11,9 +11,10 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <a href="index.html"><h1>Three<span>Way</span></h1></a>
+                <a href="index.html"><h1>Three<span>Way</span><i class="fas fa-shopping-cart"></i></h1></a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="menus">
+                <i class="fa fa-times" id="close"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
@@ -23,13 +24,17 @@
                     <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
                 </ul>
             </div>
+            <div class="toggle-menu">
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <i id="toggle-menu" class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
     <footer>
         <div class="footer-content">
             <div class="footer-card footer-card-one">
-                <a href="index.html"><h1>Three<span>Way</span></h1></a>
+                <a href="index.html"><h1>Three<span>Way</span><i class="fas fa-shopping-cart"></i></h1></a>
                 <h3>Contact</h3>
                 <p><span>Address:</span> 562 Wellington Road Street 32, San Francisco</p>
                 <p><span>Phone:</span> +234 803 874 2557 / +234 815 624 9513</p>
@@ -87,5 +92,9 @@
         <p id="copy-right">&copy; 2025 ThreeWay Technologies, E-Commerce Website.</p>
     </footer>
 
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
 </body>
 </html>
