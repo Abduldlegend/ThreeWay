@@ -1,7 +1,7 @@
 const products = [
     {
         image: {
-            thumbnail: "/assets/product-image-one-unique.jpg",
+            thumbnail: "../assets/product-image-one-unique.jpg",
             mobile: "../assets/product-image-one-radiate.jpg",
             tablet: "../assets/product-image-one-cool.jpg",
             desktop: "../assets/product-image-one.jpg"
@@ -12,9 +12,9 @@ const products = [
     },
     {
         image: {
-            thumbnail: "../assets/product-image-two-unique.jpg",
-            mobile: "../assets/product-image-two-radiate.jpg",
-            tablet: "../assets/product-image-two-cool.jpg",
+            thumbnail: "/assets/product-image-two-unique.jpg",
+            mobile: "/assets/product-image-two-radiate.jpg",
+            tablet: "/assets/product-image-two-cool.jpg",
             desktop: "../assets/product-image-two.jpg"
         },
         name: "Shadow Muse Tee",
