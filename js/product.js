@@ -1,10 +1,10 @@
 const products = [
     {
         image: {
-            thumbnail: "../assets/product-image-one-unique.jpg",
-            mobile: "../assets/product-image-one-radiate.jpg",
-            tablet: "../assets/product-image-one-cool.jpg",
-            desktop: "../assets/product-image-one.jpg"
+            thumbnail: "./assets/product-image-one-unique.jpg",
+            mobile: "./assets/product-image-one-radiate.jpg",
+            tablet: "./assets/product-image-one-cool.jpg",
+            desktop: "./assets/product-image-one.jpg"
         },
         name: "Cartoon Astronout T-Shirt",
         category: "Adidas",
@@ -12,10 +12,10 @@ const products = [
     },
     {
         image: {
-            thumbnail: "/assets/product-image-two-unique.jpg",
-            mobile: "/assets/product-image-two-radiate.jpg",
-            tablet: "/assets/product-image-two-cool.jpg",
-            desktop: "../assets/product-image-two.jpg"
+            thumbnail: "./assets/product-image-two-unique.jpg",
+            mobile: "./assets/product-image-two-radiate.jpg",
+            tablet: "./assets/product-image-two-cool.jpg",
+            desktop: "./assets/product-image-two.jpg"
         },
         name: "Shadow Muse Tee",
         category: "Nike",
@@ -23,10 +23,10 @@ const products = [
     },
     {
         image: {
-            thumbnail: "../assets/product-image-five-unique.jpg",
-            mobile: "../assets/product-image-five-radiate.jpg",
-            tablet: "../assets/product-image-five-cool.jpg",
-            desktop: "../assets/product-image-five.jpg"
+            thumbnail: "./assets/product-image-five-unique.jpg",
+            mobile: "./assets/product-image-five-radiate.jpg",
+            tablet: "./assets/product-image-five-cool.jpg",
+            desktop: "./assets/product-image-five.jpg"
         },
         name: "Air Flex Tee",
         category: "Nike",
@@ -34,10 +34,10 @@ const products = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-eight-unique.jpg",
-                mobile: "../assets/product-image-eight-radiate.jpg",
-                tablet: "../assets/product-image-eight-cool.jpg",
-                desktop: "../assets/product-image-eight.jpg"
+                thumbnail: "./assets/product-image-eight-unique.jpg",
+                mobile: "./assets/product-image-eight-radiate.jpg",
+                tablet: "./assets/product-image-eight-cool.jpg",
+                desktop: "./assets/product-image-eight.jpg"
             },
             "name": "Puma Elite Stretch",
             "category": "Puma",
@@ -45,10 +45,10 @@ const products = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-thirteen-unique.jpg",
-                mobile: "../assets/product-image-thirteen-radiate.jpg",
-                tablet: "../assets/product-image-thirteen-cool.jpg",
-                desktop: "../assets/product-image-thirteen.jpg"
+                thumbnail: "./assets/product-image-thirteen-unique.jpg",
+                mobile: "./assets/product-image-thirteen-radiate.jpg",
+                tablet: "./assets/product-image-thirteen-cool.jpg",
+                desktop: "./assets/product-image-thirteen.jpg"
             },
             name: "Classic Gabbana",
             category: "Dolce Gabbana",
@@ -56,10 +56,10 @@ const products = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-six-unique.jpg",
-                mobile: "../assets/product-image-six-radiate.jpg",
-                tablet: "../assets/product-image-six-cool.jpg",
-                desktop: "../assets/product-image-six.jpg"
+                thumbnail: "./assets/product-image-six-unique.jpg",
+                mobile: "./assets/product-image-six-radiate.jpg",
+                tablet: "./assets/product-image-six-cool.jpg",
+                desktop: "./assets/product-image-six.jpg"
             },
             "name": "Gilt Edge",
             "category": "Adidas",
@@ -67,10 +67,10 @@ const products = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-nine-unique.jpg",
-                mobile: "../assets/product-image-nine-radiate.jpg",
-                tablet: "../assets/product-image-nine-cool.jpg",
-                desktop: "../assets/product-image-nine.jpg"
+                thumbnail: "./assets/product-image-nine-unique.jpg",
+                mobile: "./assets/product-image-nine-radiate.jpg",
+                tablet: "./assets/product-image-nine-cool.jpg",
+                desktop: "./assets/product-image-nine.jpg"
             },
             name: "Jetstream Tailored",
             category: "Puma",
@@ -78,10 +78,10 @@ const products = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-sixteen-unique.jpg",
-                mobile: "../assets/product-image-sixteen-radiate.jpg",
-                tablet: "../assets/product-image-sixteen-cool.jpg",
-                desktop: "../assets/product-image-sixteen.jpg"
+                thumbnail: "./assets/product-image-sixteen-unique.jpg",
+                mobile: "./assets/product-image-sixteen-radiate.jpg",
+                tablet: "./assets/product-image-sixteen-cool.jpg",
+                desktop: "./assets/product-image-sixteen.jpg"
             },
             name: "VersaWave",
             category: "Versace",
@@ -209,10 +209,10 @@ products.forEach(product =>{
 const newproducts = [
     {
         image: {
-            thumbnail: "../assets/product-image-eleven-unique.jpg",
-            mobile: "../assets/product-image-eleven-radiate.jpg",
-            tablet: "../assets/product-image-eleven-cool.jpg",
-            desktop: "../assets/product-image-eleven.jpg"
+            thumbnail: "./assets/product-image-eleven-unique.jpg",
+            mobile: "./assets/product-image-eleven-radiate.jpg",
+            tablet: "./assets/product-image-eleven-cool.jpg",
+            desktop: "./assets/product-image-eleven.jpg"
         },
         name: "Rushline Tracks",
         category: "Nike",
@@ -220,10 +220,10 @@ const newproducts = [
     },
     {
         image: {
-            thumbnail: "../assets/product-image-fourteen-unique.jpg",
-            mobile: "../assets/product-image-fourteen-radiate.jpg",
-            tablet: "../assets/product-image-fourteen-cool.jpg",
-            desktop: "../assets/product-image-fourteen.jpg"
+            thumbnail: "./assets/product-image-fourteen-unique.jpg",
+            mobile: "./assets/product-image-fourteen-radiate.jpg",
+            tablet: "./assets/product-image-fourteen-cool.jpg",
+            desktop: "./assets/product-image-fourteen.jpg"
         },
         name: "Gilt Edge",
         category: "Gucci",
@@ -231,10 +231,10 @@ const newproducts = [
     },
     {
         image: {
-            thumbnail: "../assets/product-image-fifteen-unique.jpg",
-            mobile: "../assets/product-image-fifteen-radiate.jpg",
-            tablet: "../assets/product-image-fifteen-cool.jpg",
-            desktop: "../assets/product-image-fifteen.jpg"
+            thumbnail: "./assets/product-image-fifteen-unique.jpg",
+            mobile: "./assets/product-image-fifteen-radiate.jpg",
+            tablet: "./assets/product-image-fifteen-cool.jpg",
+            desktop: "./assets/product-image-fifteen.jpg"
         },
         name: "Urban Royal",
         category: "Gucci",
@@ -242,10 +242,10 @@ const newproducts = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-four-unique.jpg",
-            mobile: "../assets/product-image-four-radiate.jpg",
-            tablet: "../assets/product-image-four-cool.jpg",
-                desktop: "../assets/product-image-four.jpg"
+                thumbnail: "./assets/product-image-four-unique.jpg",
+            mobile: "./assets/product-image-four-radiate.jpg",
+            tablet: "./assets/product-image-four-cool.jpg",
+                desktop: "./assets/product-image-four.jpg"
             },
             "name": "Velvet District",
             "category": "Versace",
@@ -253,10 +253,10 @@ const newproducts = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-three-unique.jpg",
-            mobile: "../assets/product-image-three-radiate.jpg",
-            tablet: "../assets/product-image-three-cool.jpg",
-                desktop: "../assets/product-image-three.jpg"
+                thumbnail: "./assets/product-image-three-unique.jpg",
+            mobile: "./assets/product-image-three-radiate.jpg",
+            tablet: "./assets/product-image-three-cool.jpg",
+                desktop: "./assets/product-image-three.jpg"
             },
             name: "StreetForge",
             category: "Puma",
@@ -264,10 +264,10 @@ const newproducts = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-seven-unique.jpg",
-            mobile: "../assets/product-image-seven-radiate.jpg",
-            tablet: "../assets/product-image-seven-cool.jpg",
-                desktop: "../assets/product-image-seven.jpg"
+                thumbnail: "./assets/product-image-seven-unique.jpg",
+            mobile: "./assets/product-image-seven-radiate.jpg",
+            tablet: "./assets/product-image-seven-cool.jpg",
+                desktop: "./assets/product-image-seven.jpg"
             },
             "name": "Signature Pulse",
             "category": "Bottega Vanneta",
@@ -275,10 +275,10 @@ const newproducts = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-twelve-unique.jpg",
-            mobile: "../assets/product-image-twelve-radiate.jpg",
-            tablet: "../assets/product-image-twelve-cool.jpg",
-                desktop: "../assets/product-image-twelve.jpg"
+                thumbnail: "./assets/product-image-twelve-unique.jpg",
+            mobile: "./assets/product-image-twelve-radiate.jpg",
+            tablet: "./assets/product-image-twelve-cool.jpg",
+                desktop: "./assets/product-image-twelve.jpg"
             },
             name: "Adidas Reflex",
             category: "Adidas",
@@ -286,10 +286,10 @@ const newproducts = [
         },
         {
             image: {
-                thumbnail: "../assets/product-image-ten-unique.jpg",
-                mobile: "../assets/product-image-ten-radiate.jpg",
-                tablet: "../assets/product-image-ten-cool.jpg",
-                desktop: "../assets/product-image-ten.jpg"
+                thumbnail: "./assets/product-image-ten-unique.jpg",
+                mobile: "./assets/product-image-ten-radiate.jpg",
+                tablet: "./assets/product-image-ten-cool.jpg",
+                desktop: "./assets/product-image-ten.jpg"
             },
             name: "Motion Flex Pants",
             category: "Nike",

@@ -904,7 +904,7 @@ footer > #copy-right{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 2%;
+        top: .5%;
         left: 5%;
     }
 
@@ -919,11 +919,11 @@ footer > #copy-right{
     }
 
     .modal-description #item-category, .modal-description h3{
-        padding-bottom: 1em;
+        padding-bottom: .6em;
     }
 
     .modal-description h4{
-        padding: 1em 0 1em 0;
+        padding: .8em 0 .8em 0;
     }
 
     #cancel-btn{
