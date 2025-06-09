@@ -381,6 +381,7 @@ ul li a:hover{
     background-color: var(--header-background);
     transition: .3s;
     color: var(--main-color-two);
+    cursor: pointer;
 }
 
 

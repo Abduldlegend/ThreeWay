@@ -275,7 +275,7 @@ const newproducts = [
         },
         {
             image: {
-                thumbnail: "./assets/product-image-twelve-unique.jpg",
+            thumbnail: "./assets/product-image-twelve-unique.jpg",
             mobile: "./assets/product-image-twelve-radiate.jpg",
             tablet: "./assets/product-image-twelve-cool.jpg",
                 desktop: "./assets/product-image-twelve.jpg"
