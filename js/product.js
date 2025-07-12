@@ -158,7 +158,7 @@ products.forEach(product =>{
                                 <option>Small</option>
                             </select><br>
                             <input type="text">
-                            <a href="#">Add To Cart</a>
+                            <a href="#" class="add-to-cart">Add To Cart</a>
                             <h4>Product Details</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum quae, libero aspernatur accusamus earum. Accusamus libero alias dolores ipsa reprehenderit! Rerum, quam eaque voluptatum aliquam quidem quaerat illum harum?</p>
                             `;
@@ -368,6 +368,7 @@ newproducts.forEach(newProduct =>{
                             </select><br>
                             <input type="text">
                             <a href="#">Add To Cart</a>
+                            <button class="add-to-cart">Add To Cart</button>
                             <h4>Product Details</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum quae, libero aspernatur accusamus earum. Accusamus libero alias dolores ipsa reprehenderit! Rerum, quam eaque voluptatum aliquam quidem quaerat illum harum?
                             </p>
@@ -411,13 +412,69 @@ newproducts.forEach(newProduct =>{
                             thumbnail.addEventListener("click", ()=>{
                                 mainProductImage.setAttribute("src", `${newProduct.image['thumbnail']}`);
                             });
+
+
+            
+
+        // Add to Cart
+
+        const addToCart = document.querySelector(".add-to-cart");
+
+        const cartContainer = document.querySelector("#cart-container");
+
+        addToCart.addEventListener("click", ()=>{
+            
+            const cartContent = document.createElement("div");
+
+            cartContent.classList.add("cart-content");
+
+            cartContent.innerHTML = `
+                                    <span class ="cart-ct">
+                                        <i class="fa fa-times"></i>
+                                    </span>
+                                    <img class ="cart-ct cart-app-img" src="${newProduct.image['desktop']}" alt="">
+                                    <p class ="cart-ct">${newProduct.name}</p>
+                                    <h3 class ="cart-ct">$ ${newProduct.price}</h3>
+                                    <input class ="cart-ct" type="text">
+                                    <h3 class ="cart-ct">$ ${newProduct.price}</h3>
+            `;
+
+            cartContainer.appendChild(cartContent);
+
+            alert("Item successfully added to cart!!");
+            newproductModal.style.display = 'none';
+            
+        });
                         
     });
 
+
+// Add to cart
+
 });
 
+// const addToCart = document.querySelector(".add-to-cart");
 
+// const cartContainer = document.querySelector(".cart-container");
 
+// addToCart.addEventListener("click", ()=>{
+//     const cartContent = document.createElement("div");
+
+//     cartContent.classList.add("cart-content");
+
+//     cartContent.innerHTML = `
+//                             <span>
+//                                 <i class="fa fa-times"></i>
+//                             </span>
+//                             <img src="" alt="">
+//                             <p>${}</p>
+//                             <h3>${}</h3>
+//                             <input type="text">
+//                             <h3>${}</h3>
+//     `;
+
+//     cartContainer.appendChild(cartContent);
+// });
 
 
 

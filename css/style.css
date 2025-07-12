@@ -942,6 +942,20 @@ footer > #copy-right{
     .footer-card-three, .footer-card-two{
         flex-basis: 40%;
     }
+
+    /* product page Hero Section */
+
+    .know-who-we-are{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .know-who-we-are img{
+        width: 90%;
+    }
+
 }
 
 /* Extra Small Devices */
@@ -1045,7 +1059,6 @@ footer > #copy-right{
         top: 2%;
         right: 2%;
     }
-
 
 }
 
