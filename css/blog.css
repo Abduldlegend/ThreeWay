@@ -16,8 +16,9 @@
 }
 
 .blog-hero-section h3 {
+    color: white;
     font-size: 2rem;
-    /* background-color: wheat; */
+    background-color: green;
     padding: 1rem;
 }
 
